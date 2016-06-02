@@ -15,16 +15,14 @@ describe 'should pass the minisculus challenges' do
     challenge_one = start_challenge
     challenge_one.should == "Strong NE Winds!"
 
-    minisculus = Minisculus.new
-
-    answer = minisculus.encode(6, challenge_one)
+    answer = 'foo'
 
     submit_answer(answer)
   end
 
   it 'should pass the second challenge' do
     challenge_two = start_challenge
-    challenge_two.should == "Strong NE Winds!"
+    challenge_two.should == "foo"
 
     answer = 'foo'
     submit_answer(answer)
