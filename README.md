@@ -4,7 +4,7 @@
 Here are series of coding challenges that can be used as group exercises.  They facilitate team working, and promote
 discussing/learning language features.
 
-# How
+## How
 
 We complete these challenges in a mob programming style - with everyone sat around a projector, everyone taking a turn
 to be in the active pair of Driver (at the keyboard) / Chief Navigator (directing the Driver).  At the end of a time
@@ -13,11 +13,14 @@ input, but not when the tests are red.
 
 Challenges are completed using TDD - (red -> green -> refactor)
 
-# Languages
+## Languages / Code
 
 We use various languages for the challenges (Ruby, Java, ...)
 
-# Challenges
+Code is within each challenge's directory to provide what teams will need to start working on the challenges straight
+away.
+
+## Challenges
 
 1. [Minisculus Challenge](1_minisculus/README.md)
 2. [Yak Simulator](2_yak_simulator/README.md)
