@@ -3,7 +3,7 @@ require 'http'
 require 'json'
 require 'minisculus'
 
-describe 'should pass the minisculus challenges' do
+describe 'the minisculus challenges' do
 
   let(:open_instructions_in_browser?) { true }
 
@@ -11,20 +11,19 @@ describe 'should pass the minisculus challenges' do
     start
   end
 
-  it 'should pass the first challenge' do
-    challenge_one = start_challenge
-    challenge_one.should == "Strong NE Winds!"
+  it 'should all pass' do
+    challenge_one
+    #challenge_two
+    #etc
 
-    answer = 'foo'
-
-    submit_answer(answer)
   end
 
-  it 'should pass the second challenge' do
-    challenge_two = start_challenge
-    challenge_two.should == "foo"
+  def challenge_one
+    challenge = start_challenge
+    challenge.should == "Strong NE Winds!"
 
-    answer = 'foo'
+    answer = "foo"
+
     submit_answer(answer)
   end
 
@@ -52,7 +51,7 @@ describe 'should pass the minisculus challenges' do
   def submit_answer(answer)
     response = put_answer(answer)
     response.code.should == 303
-    @question_url = "http://minisculuschallenge.com/#{response[:Location]}"
+    @question_url = "http://minisculuschallenge.com#{response[:Location]}"
   end
 
   def put_answer(answer)
