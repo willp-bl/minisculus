@@ -1,5 +1,5 @@
 
-# Team Challenges
+# Team Challenges / Learning Sessions
 
 Here are series of coding challenges that can be used as group exercises.  They facilitate team working, and promote
 discussing/learning language features.
@@ -20,7 +20,11 @@ We use various languages for the challenges (Ruby, Java, ...)
 Code is within each challenge's directory to provide what teams will need to start working on the challenges straight
 away.
 
-## Challenges
+## Challenges / Learning Sessions
 
 1. [Minisculus Challenge](1_minisculus/README.md)
 2. [Yak Simulator](2_yak_simulator/README.md)
+3. Unconference
+4. Introduction to Puppet (talk & exercise)
+5. [Introduction to Docker](5_docker/README.md)
+
