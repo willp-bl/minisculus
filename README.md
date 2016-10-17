@@ -22,9 +22,12 @@ away.
 
 ## Challenges / Learning Sessions
 
-1. [Minisculus Challenge](1_minisculus/README.md)
-2. [Yak Simulator](2_yak_simulator/README.md)
-3. Unconference
-4. Introduction to Puppet (talk & exercise)
-5. [Introduction to Docker](5_docker/README.md)
+1. [Minisculus Challenge](1_minisculus/README.md) (Coding/Crypto)
+2. [Yak Simulator](2_yak_simulator/README.md) (Coding/Finite State Machine)
+3. [Unconference](https://identityassurance.blog.gov.uk/2016/09/16/the-technical-team-working-together-through-group-learning/)
+4. Introduction to Puppet (talk & exercise) (Ops)
+5. [Introduction to Docker](5_docker/README.md) (Coding/Ops)
 
+## Blog posts
+
+[Blog post about first three sessions](https://identityassurance.blog.gov.uk/2016/09/16/the-technical-team-working-together-through-group-learning/)
