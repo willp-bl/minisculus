@@ -32,19 +32,27 @@ class: center, middle
 1. What is Docker?
 2. App vs VM vs Container
 3. 12-factor
-4. 
-5. 
-6. Practical
+4. One to Lots
+5. Practical
 
 ---
 
 # What is Docker?
 
-## Foo
+"Docker is the world’s leading software containerization platform" -
+https://www.docker.com
+
+"Docker containers wrap a piece of software in a complete filesystem
+that contains everything needed to run: code, runtime, system tools,
+system libraries – anything that can be installed on a server. This
+guarantees that the software will always run the same, regardless of
+its environment." - https://www.docker.com/what-docker
 
 ---
 
-# App vs VM vs Container
+# App vs [VM vs Container](https://www.docker.com/what-docker#/VM)
+
+# Container == App + [some] Ops
 
 ---
 
@@ -68,14 +76,20 @@ class: center, middle
 
 ---
 
----
+# One to Lots
 
----
+Does it matter where the containers run?
+
+Can compose whole services using `docker-compose.yml`:
+
+* networking between microservices from within Docker
+* auto load balancing
 
 ---
 
 # Practical
 
+Have a look at [README.md](https://github.com/willp-bl/team-challenges/tree/master/5_docker)
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
