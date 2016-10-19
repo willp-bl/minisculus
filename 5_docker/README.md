@@ -40,17 +40,12 @@ To override a setting in the `./config/microservice.yml` config file:
 1. Install Docker for Mac and Maven
 2. Have a look at the contents of the Dockerfile
 2. Package and run the Docker container
-   * `5_docker$ docker build -t microservice .`
-   This command runs interactively, destroys the container state when finished, maps post 8080 exposed by the Dockerfile to localhost port 9000 and names the running container microservice
-   * `5_docker$ docker run -it --rm --name microservice -p 9000:8080 microservice`
+   * `5_docker$ docker build -t microservice .` [This command builds the container using the Dockerfile in the current directory and names it microservice]
+   * `5_docker$ docker run -it --rm --name microservice -p 9000:8080 microservice` [This command runs interactively, destroys the container state when finished, maps port 8080 exposed by the Dockerfile to host port 9000 and names the running container microservice]
    * `$ curl -v :9000`
    * take a look at the output of `docker ps` when the container is running
-3. Modify some config using environment variables
-4. Modify some config using parameters to the java command line (bonus points for throwing in environment variables)
-5. Write a basic Dockerfile that can build a `microservice` container
-6. Run the Docker container locally: `docker run`
-7. 
-8. In MicroserviceApplication.initialize() make strict be true, this ensures all environment variables must be present
-9. 
-10. Use `docker-compose` to spin up more than one microservice.  Try and load balance using `dockercloud-haproxy` (autoreconfigures when containers added/removed) - I haven't tested this.
+3. Modify some config externally from the container by using the `docker run` command line
+4. Modify some config externally from the container that can only be set by using parameters to the java command line (hint: use a new env var inside the container)
+5. In MicroserviceApplication.initialize() make strict be true, this ensures all environment variables must be present.  Run the container.
+6. Use `docker-compose` to spin up more than one microservice.  Try and load balance using `dockercloud-haproxy` (autoreconfigures when containers added/removed) - Note: I haven't tested this.
 
