@@ -32,8 +32,8 @@ server config/microservice.yml`.
 
 To override a setting in the `./config/microservice.yml` config file:
 
-* `java -Ddw.applicationConnector[0].port=8088 -jar target/microservice-1.0.jar` `MS_MESSAGE="some message" java -jar
-* target/microservice-1.0.jar`
+* `java -Ddw.applicationConnector[0].port=8088 -jar target/microservice-1.0.jar`
+* `MS_MESSAGE="some message" java -jar target/microservice-1.0.jar`
 
 ## Challenges
 
