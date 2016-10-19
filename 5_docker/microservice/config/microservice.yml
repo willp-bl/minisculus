@@ -11,6 +11,7 @@ logging:
 server:
   applicationConnectors:
     - type: http
+      bindHost: 0.0.0.0 # bind to all interfaces
       port: ${MS_APPLICATION_PORT:-8080}
   adminConnectors:
     - type: http
