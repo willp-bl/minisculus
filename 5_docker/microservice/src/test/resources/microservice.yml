@@ -1,0 +1,19 @@
+logging:
+  level: ${MS_LOGLEVEL:-"INFO"}
+  appenders:
+    - type: console
+      target: stdout
+    - type: file
+      currentLogFilename: ${MS_LOGFILE:-"./logs/microservice.log"}
+      archivedLogFilenamePattern: ${MS_LOGFILE_ARCHIVE_PATTERN:-"./logs/microservice-%d.log"}
+      archivedFileCount: ${MS_LOGFILE_ARCHIVE_COUNT:-5}
+
+server:
+  applicationConnectors:
+    - type: http
+      port: ${MS_APPLICATION_PORT:-8080}
+  adminConnectors:
+    - type: http
+      port: ${MS_ADMIN_PORT:-8081}
+
+message: ${MS_MESSAGE:-"Message In A Bottle"}
