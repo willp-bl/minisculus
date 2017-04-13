@@ -27,6 +27,7 @@ away.
 3. [Unconference](https://identityassurance.blog.gov.uk/2016/09/16/the-technical-team-working-together-through-group-learning/)
 4. Introduction to Puppet (talk & exercise) (Ops)
 5. [Introduction to Docker](5_docker/README.md) (Coding/Ops)
+6. [Write a Local Matching Service](https://github.com/alphagov/verify-sample-local-matching-services) (Coding/Verify)
 
 ## Blog posts
 
